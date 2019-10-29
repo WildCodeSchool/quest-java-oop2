@@ -4,11 +4,11 @@ public class Nature {
 
     public static void main(String[] args) {
 
-        // la référence riri reçoit une nouvelle instance de la classe Duck
+        // the riri reference receives a new instance of the Duck class
         Duck donald = new Duck("Donald"); 
-        // utilisation d'un setter    
+        // use of a setter    
         donald.setAge(84);
-        // utilisation de getters      
+        // use of getters      
         System.out.println("1. Duck name is : " + donald.getName());
         System.out.println("2. He is " + String.valueOf(donald.getAge()));
         System.out.println("3. He sings " + donald.sing());
@@ -18,14 +18,14 @@ public class Nature {
         System.out.println("5. He is " + String.valueOf(thorondor.getAge()));
         System.out.println("6. He sings " + thorondor.sing());
         
-        // comme riri et thorondor sont des enfants de Bird
-        // il est possible de les stocker dans une même ArrayList
+        // as riri and thorondor are children of Bird
+        // it is possible to store them in the same ArrayList
         ArrayList<Bird> birds = new ArrayList<>();
         birds.add(donald);
         birds.add(thorondor);
         
-        System.out.println("7. Oiseaux de la liste : ");
-        // parcours de la liste
+        System.out.println("7. Birds of the list : ");
+        // list navigation
         for (Bird bird : birds) {
             System.out.println("- " + bird.getName());
         }
